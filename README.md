@@ -1,9 +1,9 @@
 # Casting Agency Company
 
-###description
+### description
 The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies.
 
-#####Code Style
+##### Code Style
 This project adheres to the python [PEP8](https://www.python.org/dev/peps/pep-0008/) Coding guidelines.
 
 
@@ -35,7 +35,7 @@ This will install all of the required packages we selected within the `requireme
 
 - [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/#) is the extension we'll use to handle cross origin requests from our frontend server.
 
-####Local Deployment & Testing
+#### Local Deployment & Testing
 Once all the dependencies are installed next we need to set up the database.
 This project uses `Postgresql` database
 
@@ -93,7 +93,7 @@ The API will return 3 types of error if request fails / for invalid requests:
 
 ### Roles and Permissions
 APIs in this project uses below roles and permissions
-#####Roles:
+##### Roles:
 - Casting Assistant
     - Can view actors and movies
 - Casting Director
@@ -104,7 +104,7 @@ APIs in this project uses below roles and permissions
     - All permissions a Casting Director has and…
     - Add or delete a movie from the database
 
-#####Permissions
+##### Permissions
 |Permission|Permission details|
 |----------|------------------|
 |add:actors| Permission to add Actors|
@@ -122,7 +122,7 @@ APIs in this project uses below roles and permissions
 - General: Return application health or status to check application is up and running
 - Sample: ```curl http://127.0.0.1:8080/status```
             ```curl http://127.0.0.1:8080/health```
-######Response           
+###### Response           
 ```
 {
     "message": "Welcome to Casting Agency"
