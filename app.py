@@ -324,3 +324,7 @@ def auth_error(error):
     response = jsonify(error.error)
     response.status_code = error.status_code
     return response
+
+
+if __name__ == '__main__':
+    app.run()

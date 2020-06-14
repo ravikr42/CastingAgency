@@ -7,6 +7,7 @@ from faker import Faker
 import random
 import app_utils
 
+# for cloud deployments - change test_db_url in setup.sh file.
 DATABASE_PATH = os.getenv("TEST_DB_URL")
 PRODUCER_TOKEN = os.getenv("PRODUCER_TOKEN")
 DIRECTOR_TOKEN = os.getenv("DIRECTOR_TOKEN")
