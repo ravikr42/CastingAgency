@@ -28,17 +28,6 @@ def after_request(response):
 
 
 @app.route("/")
-def app_login():
-    return redirect(
-        "https://ravikr42.auth0.com/authorize?audience=casting&response_type=token&client_id=5UA15tFootU11PzhEHvxt42SJe6gRS2h&redirect_uri=https://127.0.0.1:8080/login-results",
-        code=302)
-
-
-@app.route("/login-results")
-def login_results():
-    return jsonify("you are logged In")
-
-
 @app.route("/health")
 @app.route("/status")
 def app_greet():
