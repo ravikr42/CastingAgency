@@ -69,7 +69,7 @@ pytest castingagency_tests.py
 ## Live Server
 Below the url for the Heroku deployed application.
 ```
-URL Goes Here
+https://casting-agency42.herokuapp.com
 ```
 
 ## API Reference
