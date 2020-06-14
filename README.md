@@ -315,3 +315,9 @@ curl --location --request PATCH 'http://127.0.0.1:8080/movies/<movie_id>' --head
 }
 ```
 
+## Developer
+#### [Ravi Kumar](https://github.com/ravikr42) 
+
+## Acknowledgements
+#### [Udacity](http://udacity.com/) 
+
