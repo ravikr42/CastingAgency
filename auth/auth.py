@@ -5,12 +5,12 @@ from jose import jwt
 from urllib.request import urlopen
 import os
 
-AUTH0_DOMAIN = os.getenv("AUTH0_DOMAIN")
-ALGORITHMS = [os.getenv("ALGORITHMS")]
-API_AUDIENCE = os.getenv("API_AUDIENCE")
-# AUTH0_DOMAIN = 'ravikr42.auth0.com'
-# ALGORITHMS = ['RS256']
-# API_AUDIENCE = 'casting'
+# AUTH0_DOMAIN = os.getenv("AUTH0_DOMAIN")
+# ALGORITHMS = [os.getenv("ALGORITHMS")]
+# API_AUDIENCE = os.getenv("API_AUDIENCE")
+AUTH0_DOMAIN = 'ravikr42.auth0.com'
+ALGORITHMS = ['RS256']
+API_AUDIENCE = 'casting'
 
 # AuthError Exception
 '''
@@ -18,12 +18,10 @@ AuthError Exception
 A standardized way to communicate auth failure modes
 '''
 
-
 class AuthError(Exception):
     def __init__(self, error, status_code):
         self.error = error
         self.status_code = status_code
-
 
 # Auth Header
 def get_token_auth_header():
@@ -56,7 +54,6 @@ def get_token_auth_header():
 
     token = parts[1]
     return token
-
 
 # method to check permission in JWT Token
 def check_permissions(permissions, payload):

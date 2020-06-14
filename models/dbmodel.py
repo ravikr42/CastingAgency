@@ -4,7 +4,7 @@ import os
 
 import app_utils
 
-database_path = os.getenv("DATABASE_URL", "<ur-local-db-url-goes-here>")
+database_path = os.getenv("DATABASE_URL", "postgres://postgres:Welcome123@localhost:5432/casting_agency")
 
 db = SQLAlchemy()
 
